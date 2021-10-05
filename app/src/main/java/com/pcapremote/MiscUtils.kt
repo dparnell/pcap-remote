@@ -113,7 +113,7 @@ object MiscUtils {
     fun appVersion(context: Context): String {
         try {
             val pInfo = context.packageManager.getPackageInfo(context.packageName, 0)
-            val versionCode = if (isAtLeastP()) pInfo.longVersionCode else pInfo.versionCode.toLong()
+            val versionCode = if (isAtLeastP()) pInfo.longVersionCode else pInfo.getLongVersionCode()
 
             return String.format(
                     context.getString(R.string.preferences_about_version_template),
