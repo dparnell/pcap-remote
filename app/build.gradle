@@ -7,6 +7,7 @@ apply plugin: 'com.google.android.gms.oss-licenses-plugin'
 
 android {
     compileSdkVersion 29
+
     defaultConfig {
         applicationId "com.egorovandreyrm.pcapremote"
         minSdkVersion 21
@@ -26,6 +27,15 @@ android {
 //        }
 
         resConfigs "en"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += [
+                    "room.schemaLocation":"$projectDir/schemas".toString(),
+                    "room.incremental":"true",
+                    "room.expandProjection":"true"]
+            }
+        }
     }
 
     android.compileOptions.sourceCompatibility 1.8
