@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_how_to_faq.*
 import kotlinx.android.synthetic.main.how_to_faq_card_view_item.view.*
-import kotlinx.android.synthetic.main.log_item.view.*
 import kotlinx.android.synthetic.main.log_item.view.tvTitle
 
 

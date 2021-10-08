@@ -42,7 +42,7 @@ object MiscUtils {
     }
 
     fun isSamsung(): Boolean {
-        return Build.MANUFACTURER.toLowerCase(Locale.ROOT).contains("samsung")
+        return Build.MANUFACTURER.lowercase(Locale.ROOT).contains("samsung")
     }
 
     fun getStatusString(context: Context, capturedPackets: Int, sentToSsh: Int): String {
