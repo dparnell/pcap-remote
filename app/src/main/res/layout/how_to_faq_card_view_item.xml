@@ -22,12 +22,12 @@
                 android:id="@+id/tvTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/youtube_icon"
                 android:drawablePadding="8dp"
                 android:fontFamily="@font/cabin_bold"
                 android:gravity="center_vertical"
                 android:textSize="16sp"
-                tools:text="Capturing Options" />
+                tools:text="Capturing Options"
+                card_view:drawableEndCompat="@drawable/youtube_icon" />
 
             <TextView
                 android:id="@+id/tvDescription"
